@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "AnonymusDelegate.h"
+
+@interface AppDelegate () <UIAlertViewDelegate>
+
+@end
+
 
 @implementation AppDelegate
 
@@ -16,6 +22,19 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test" message:@"Mensage de test" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+    
+    alert.delegate = dynProtocol(@selector(alertView:clickedButtonAtIndex:), ^(SEL c, UIAlertView *v, NSInteger i) {
+        NSLog(@"Success. alert %@ - i = %d", v, i);
+    }, @selector(willPresentAlertView:), ^(SEL c, UIAlertView *v) {
+        NSLog(@"Will present alert. alert = %@", v);
+    }, @selector(didPresentAlertView:), ^(SEL c, UIAlertView *v) {
+        NSLog(@"Did present alert. alert = %@", v);
+    }, NULL);
+    
+    [alert show];
+    
     return YES;
 }
 
