@@ -21,6 +21,7 @@
 		9BA4EDE01647EF540018E69A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA4EDC11647EF540018E69A /* Foundation.framework */; };
 		9BA4EDE81647EF550018E69A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BA4EDE61647EF550018E69A /* InfoPlist.strings */; };
 		9BA4EDEB1647EF550018E69A /* AnonymusDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4EDEA1647EF550018E69A /* AnonymusDelegateTests.m */; };
+		9BA4EDF61647EF980018E69A /* AnonymusDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4EDF51647EF980018E69A /* AnonymusDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		9BA4EDE71647EF550018E69A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BA4EDE91647EF550018E69A /* AnonymusDelegateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnonymusDelegateTests.h; sourceTree = "<group>"; };
 		9BA4EDEA1647EF550018E69A /* AnonymusDelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnonymusDelegateTests.m; sourceTree = "<group>"; };
+		9BA4EDF41647EF980018E69A /* AnonymusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnonymusDelegate.h; sourceTree = "<group>"; };
+		9BA4EDF51647EF980018E69A /* AnonymusDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnonymusDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		9BA4EDC51647EF540018E69A /* AnonymusDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				9BA4EDF41647EF980018E69A /* AnonymusDelegate.h */,
+				9BA4EDF51647EF980018E69A /* AnonymusDelegate.m */,
 				9BA4EDCE1647EF540018E69A /* AppDelegate.h */,
 				9BA4EDCF1647EF540018E69A /* AppDelegate.m */,
 				9BA4EDC61647EF540018E69A /* Supporting Files */,
@@ -263,6 +268,7 @@
 			files = (
 				9BA4EDCC1647EF540018E69A /* main.m in Sources */,
 				9BA4EDD01647EF540018E69A /* AppDelegate.m in Sources */,
+				9BA4EDF61647EF980018E69A /* AnonymusDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
